@@ -1,0 +1,89 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+int main(){
+	string name;
+	int age, semester;
+	double CGPA;
+	cout<<"Enter your name: ";
+	getline(cin,name);
+	cout<<"Enter your age:";
+	cin>>age;
+	cout<<"Enter yourr semester: ";
+	cin>>semester;
+	cout<<"Enter your CGPA: ";
+	cin>>CGPA;
+	
+	cout<<"\n-- STUDENT PROFILE ---"<<'\n';
+	cout<<"Name :"<<name<<'\n';
+	cout<<"Age: "<<age<<'\n';
+	cout<<"Semester: "<<semester<<'\n';
+	cout<<"CGPA: "<<CGPA<<'\n';
+	
+}
+
+
+int main(){
+	int x,j;
+	for (x=1; x<=5; x++){
+		cout<<'\n';
+		for(j=1;j<=x;j++){
+			cout<<"*";
+		}
+	}
+}
+
+
+int main(){
+	int x,j;
+	for (x=1 ; x<=5; x++){
+		for(j=1;j<=5-x;j++){
+				cout<<" ";
+		}
+		for(j=1; j<=2*x-1; j++){
+			cout<<"*";
+		}
+		cout<<"\n";
+	}
+	
+}
+
+int main(){
+	double num1,num2;
+	double addition,subtruct,multiply,divide;
+	cout<<"Enter your first number: ";
+	cin>>num1;
+	cout<<"Enter your second number: ";
+	cin>>num2;
+	
+	addition=num1+num2;
+	subtruct=num1-num2;
+	multiply=num1*num2;
+	divide=num1/num2;
+	
+	cout<<"\n---Operations---\n";
+	cout<<"Addition"<<addition<<endl;
+	cout<<"Subtruct"<<subtruct<<endl;
+	cout<<"Multiplication"<<multiply<<endl;
+	cout<<"Division"<<divide<<endl;
+
+}
+
+int main(){
+	string product;
+	double price, total;
+	int quantity;
+	
+	cout<<"Enter your product: ";cin>>product;
+	cout<<"Enter price per unit: "; cin>> price;
+	cout<<"Enter quantity of product: "; cin>>quantity;
+	
+	total = price*quantity;
+	
+	cout<<"\n---BILL---\n";
+	cout<<"your product: " <<product<<endl;
+	cout<<"Price per unit:"<<price<<endl;
+	cout<<"Quantity: "<<quantity<<endl;
+	cout<<"Total price: " <<total<<endl;
+}
